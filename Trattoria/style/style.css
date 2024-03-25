@@ -1,0 +1,519 @@
+/*FONTES*/
+
+@font-face {
+  font-family: 'italiana';
+  src: url("/fonte/Italiana-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'tomato-1';
+  src: url("/fonte/tomato.otf");
+}
+
+@font-face {
+  font-family: 'cascadia';
+  src: url("/fonte/Cascadia.ttf");
+}
+
+/*NAV BAR E CABEÇALHO*/
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e1cb6af0;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  transition: top 0.9s;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.sticky {
+  top: -50px;
+  z-index: 1000;
+}
+
+.logo img {
+  max-height: 45px;
+  padding-left: 40px;
+}
+
+.navbar-items {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 40px;
+}
+
+.navbar-items li {
+  display: inline;
+  margin-left: 50px;
+  font-weight: 550;
+}
+
+.navbar-items li a {
+  color: #059424;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: italiana;
+  font-weight: 600;
+}
+
+.navbar-items li a:hover {
+  color: rgb(222, 73, 8);
+}
+
+.content p{
+  margin-top:80px;
+}
+
+/*VIDEO*/
+
+.container_video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  padding-top: 60px;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.over-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -400%);
+  padding: 20px;
+  border-radius: 50px;
+  z-index: 1;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.553);
+  color: rgba(165, 42, 42, 0.662);
+  white-space: nowrap;
+  font-family: italiana;
+  font-weight: 600;
+}
+
+.over-video-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  padding: 20px;
+  z-index: 1;
+  max-width: 400px;
+}
+
+/*SESSÃO COM IMG E TEXTO*/
+
+main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.conteiner_img {
+  display: flex;
+  background-color: #059424;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.img_text {
+  max-width: 450px;
+  max-height: auto;
+  margin-right: 0;
+}
+
+.text_img {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.text_img h3 {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(165, 42, 42);
+  font-family: tomato-1;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.text_img p {
+  text-align: justify;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 18px;
+  color: white;
+  font-family: italiana;
+}
+
+/*CARDÁPIO*/
+
+.cardapio {
+  color: rgb(165, 42, 42);
+  text-align: center;
+  font-size: 48px;
+}
+
+.cardapio h3 {
+  display: inline;
+  margin: 0 12px;
+}
+
+#escrito {
+  font-family: tomato-1;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/img/planta.png');
+  background-size: 170px;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  padding-top: 40px;
+}
+
+.espacos {
+  font-family: cascadia;
+  font-weight: 300;
+}
+
+#cardapio_geral {
+  display: flex;
+  padding: 0;
+  background-image: url('/img/tomato2.png');
+  background-size: 90px;
+  background-position: left 30px top 10px;
+  background-repeat: no-repeat;
+}
+
+#cardapio_geral2 {
+  display: flex;
+  padding: 0;
+}
+
+#side-left,
+#side-right {
+  flex: 1;
+  padding: 0 20px;
+}
+
+#side-left2{
+  flex: 1;
+  padding: 0 20px;
+  background-image: url('/img/planta2.png');
+  background-size: 150px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+#side-right2{
+  flex: 1;
+  padding: 0 20px;
+  background-image: url('/img/tacas.png');
+  background-size: 140px;
+  background-position: right 40px bottom 30px;
+  background-repeat: no-repeat;
+}
+
+#side-left h2,
+#side-right h2,
+#side-left2 h2,
+#side-right2 h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #059424;
+}
+
+#side-left ul,
+#side-right ul,
+#side-left2 ul,
+#side-right2 ul {
+  list-style-type: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+#side-left ul li h4,
+#side-right ul li h4,
+#side-left2 ul li h4,
+#side-right2 ul li h4 {
+  color: rgb(165, 42, 42);
+  font-size: 20px;
+}
+
+#side-left ul li p strong,
+#side-right ul li p strong,
+#side-left2 ul li p strong,
+#side-right2 ul li p strong {
+  color: #059424;
+}
+
+/*GALERIA DE FOTOS*/
+
+.galeria-total {
+  background-color: rgb(165, 42, 42);
+}
+
+.centro-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 80px;
+  margin-bottom: 60px;
+  background-image: url('/img/camera.png');
+  background-size: 160px;
+  background-position: bottom -20px left 30px;
+  background-repeat: no-repeat;
+}
+
+.galeria {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+.galeria h3 {
+  display: inline;
+  margin: 0 12px;
+}
+
+.fotos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.foto {
+  width: calc(20% - 10px);
+  margin-bottom: 20px;
+  border: 4px #059424 ridge;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*HORÁRIO DE FUNCIONAMENTO*/
+
+.parallax-imagem-horario {
+  background-image: url("/img/horario.jpg");
+  min-height: 500px;
+  filter: brightness(0.7);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.parallax-imagem-horario h2 {
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  font-family: tomato-1;
+  font-size: 50px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.horario,
+.horario2 {
+  flex: 1;
+  padding-top: 70px;
+  color: white;
+  padding-bottom: 80px;
+  border-top: 60px;
+  text-align: left;
+  padding-left: 250px;
+  padding-right: 180px;
+}
+
+.horario h4,
+.horario2 h4 {
+  margin-top: 0;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.horario p,
+.horario2 p {
+  font-size: 20px;
+  text-align: left;
+  border-top: 15px;
+}
+
+.horario2 {
+  text-align: center;
+  padding-left: 180px;
+  padding-right: 250px;
+  border-left: double white;
+}
+
+/*FORMULÁRIO*/
+
+#contato {
+  width: 600px; 
+  margin: 40px auto;
+  font-family: italiana;
+  font-weight: 700;
+  color:#CE2B37;
+}
+
+fieldset{
+  padding-left: 40px;
+}
+
+.coluna1 {
+  float: left;
+  width: 43%;
+  margin-right: 7%;
+}
+
+.coluna2 {
+  float: left;
+  width: 43%;
+  margin-right: 7%; 
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: calc(100% + 2px);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 93%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #CE2B37;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #009246;
+}
+
+.forms-content{
+  background-color:  #ddc559;
+  padding: 40px;
+  margin-top: 0px;
+}
+
+.contato-cab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 40px;
+  background-color: #ddc559;
+}
+
+.contato-cabe {
+  color: #009246;
+  text-align: center;
+  font-size: 28px;
+}
+
+.contato-cabe h3 {
+  display: inline;
+  margin: 0 12px;
+}
+
+#textura{
+  background-image: url('/img/textura.png');
+  background-size: 60px;
+  background-position: bottom right;
+  background-repeat: repeat;
+  background-color:  #ddc559;
+  padding-top: 40px;
+}
+
+/*FOOTER*/
+
+footer {
+  background: linear-gradient(to right, #009246 0%, #FFFFFF 40%, #FFFFFF 60%, #CE2B37 100%);
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  font-family: tomato-1;
+  font-size: 24px;
+  color: #ddc559;
+  margin: 0;
+}
