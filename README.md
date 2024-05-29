@@ -8,6 +8,7 @@ This project is a static website for a pizzeria/trattoria, aimed at showcasing t
 - Viewing the history of the restaurant.
 - Viewing the pictures galery.
 - Send a forms to the restaurant.
+- Responsiveness to screen sizes(768x800 and 1800x800)
 
 ## Technologies Used
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](javascript:void)
